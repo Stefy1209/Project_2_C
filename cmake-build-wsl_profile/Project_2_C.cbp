@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project_2_C"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2_C">
+				<Option output="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile/Project_2_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 Project_2_C"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2_C/fast">
+				<Option output="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile/Project_2_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 Project_2_C/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/Copie\ E/PbInfo\ Probleme\ si\ nu\ numai/Project\ 2\ C/cmake-build-wsl_profile/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/UIAccount.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/UIAccount.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/UIUser.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/UIUser.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/account.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/account.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/main.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/mainUI.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/mainUI.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/repo_transaction.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/repo_transaction.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/repo_user.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/repo_user.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/service_transaction.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/service_transaction.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/transaction.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/transaction.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/user.c">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/user.h">
+			<Option target="Project_2_C"/>
+		</Unit>
+		<Unit filename="/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

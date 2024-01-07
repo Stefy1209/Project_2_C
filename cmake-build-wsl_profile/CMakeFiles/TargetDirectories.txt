@@ -1,0 +1,3 @@
+/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile/CMakeFiles/Project_2_C.dir
+/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile/CMakeFiles/edit_cache.dir
+/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-wsl_profile/CMakeFiles/rebuild_cache.dir

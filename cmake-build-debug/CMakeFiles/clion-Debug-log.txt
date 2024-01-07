@@ -1,0 +1,4 @@
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-22.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C' -B '/mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-debug'"
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /mnt/d/Copie E/PbInfo Probleme si nu numai/Project 2 C/cmake-build-debug

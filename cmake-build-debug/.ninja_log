@@ -1,0 +1,10 @@
+# ninja log v5
+3	152	7260943630301654	CMakeFiles/Project_2_C.dir/main.c.obj	58ac24da391b63a8
+16	285	7260835159854311	CMakeFiles/Project_2_C.dir/service_transaction.c.obj	be344f600ec940b7
+11	118	7260937918339554	CMakeFiles/Project_2_C.dir/UIAccount.c.obj	cbba7b336e165515
+3	284	7260835159580470	CMakeFiles/Project_2_C.dir/transaction.c.obj	7c5937ea622fa6c
+4	110	7260841266804335	CMakeFiles/Project_2_C.dir/repo_transaction.c.obj	3a1aeca6786776c8
+17	242	7260918028466687	CMakeFiles/Project_2_C.dir/account.c.obj	38bfe2c801f7e37e
+153	304	7260943631755558	Project_2_C.exe	4d0522e9510285d
+5	102	7260944837018368	CMakeFiles/Project_2_C.dir/main.c.obj	58ac24da391b63a8
+103	210	7260944838050660	Project_2_C.exe	4d0522e9510285d
