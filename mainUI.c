@@ -58,6 +58,16 @@ void signUpUI(array_users *arrayUsers) {
     if(len > 0 && passwordAgain[len - 1] == '\n')
         passwordAgain[len - 1] = '\0';
 
+    user *user1;
+    size_t n = get_size_array_users(arrayUsers), i;
+    for(i = 0; i < n; ++i){
+        user1 = get_user(arrayUsers, i);
+        if(strcmp(username, get_username(user1)) == 0) {
+            printf("\nUsername already used\n\n");
+            return;
+        }
+    }
+
     if(strcmp(password, passwordAgain) != 0) {
         printf("\nThe first password is not the same as teh second one\n\n");
         return;
