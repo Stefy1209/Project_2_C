@@ -69,7 +69,7 @@ void signUpUI(array_users *arrayUsers) {
     }
 
     if(strcmp(password, passwordAgain) != 0) {
-        printf("\nThe first password is not the same as teh second one\n\n");
+        printf("\nThe first password is not the same as the second one\n\n");
         return;
     }
 

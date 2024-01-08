@@ -26,6 +26,9 @@ void UIPrintUser(user *user1) {
 }
 
 void UIAddAccount(user *user1) {
+    char typeAccount[101][101] = {"salary", "credit", "retirement", "savings", "checking"};
+    int nrTypes = 5, i;
+
     account *newAccount;
     size_t id, len;
     char file_name[101], name[101], type[101];
@@ -44,11 +47,32 @@ void UIAddAccount(user *user1) {
 
     printf("\n");
 
+    account *account1;
+    size_t n = get_size_user(user1);
+    for(i = 0; i < n; ++i) {
+        account1 = get_account(user1, i);
+        if(strcmp(name, get_name(account1)) == 0) {
+            printf("The name must be unique!\n\n");
+            return;
+        }
+    }
+
+    bool ok = false;
+    for(i = 0; i < nrTypes; ++i) {
+        if(strcmp(type, typeAccount[i]) == 0) {
+            ok = true;
+        }
+    }
+
+    if(ok == false) {
+        printf("Type Invalid!\n\n");
+        return;
+    }
+
     strcpy(file_name, get_username(user1));
     strcat(file_name, "\\");
     strcat(file_name, name);
 
-    size_t n = get_size_user(user1);
     id = 1;
 
     if(n != 0) {
