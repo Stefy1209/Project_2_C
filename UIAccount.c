@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include "account.h"
 
+// ruleaza UI-ul pentru adaugarea unei tranzactii
 void UIAddTransaction(account *account1) {
     char description[10001];
     float sum;
@@ -37,6 +38,7 @@ void UIAddTransaction(account *account1) {
             );
 }
 
+// ruleaza UI-ul pentru eliminarea unei tranzactii
 void UIRemoveTransaction(account *account1) {
     size_t id;
 
@@ -48,6 +50,7 @@ void UIRemoveTransaction(account *account1) {
     remove_transaction_to_account(transaction1, account1);
 }
 
+// ruleaza UI-ul pentru gestionarea unui cont
 void UIAccount(account *account1) {
     upload_account_transactions(account1);
     char command[101];

@@ -14,6 +14,7 @@ typedef struct {
     account **list_accounts;
 }user;
 
+// creaza o structura ce contine informatii despre user cum ar fi username, password, si o lista de conturi
 user *new_user(char username[101], char password[101]) {
     user *new_user = malloc(sizeof (user));
     strcpy(new_user->username, username);
@@ -25,6 +26,7 @@ user *new_user(char username[101], char password[101]) {
     return new_user;
 }
 
+// distruge structura de tip user
 void destroy_user(user *user1) {
     size_t n = user1->size, i;
     for(i = 0; i < n; ++i)
@@ -34,22 +36,27 @@ void destroy_user(user *user1) {
     free(user1);
 }
 
+// returneaza username
 char *get_username(user *user1) {
     return user1->username;
 }
 
+// returneaza password
 char *get_password(user *user1) {
     return user1->password;
 }
 
+// returneaza cont in functie de index
 account *get_account(user *user1, size_t index) {
     return user1->list_accounts[index];
 }
 
+// returneaza numarul de conturi al unui user
 size_t get_size_user(user *user1) {
     return user1->size;
 }
 
+// adauga cont
 void add_account(user *user1, account *account1) {
     if(user1->size == user1->capacity) {
         account **temp = user1->list_accounts;
@@ -65,6 +72,7 @@ void add_account(user *user1, account *account1) {
     user1->list_accounts[user1->size++] = account1;
 }
 
+// elimina cont
 void remove_account(user *user1, account *account1) {
     size_t n = user1->size, i = 0;
     while(i < n && user1->list_accounts[i] != account1)
@@ -84,6 +92,7 @@ void remove_account(user *user1, account *account1) {
     user1->size--;
 }
 
+// elimina toate conturile
 void delete_all_accounts(user *user1) {
     size_t n = user1->size, i;
     account *account1;
@@ -94,6 +103,7 @@ void delete_all_accounts(user *user1) {
     }
 }
 
+// returneaza cont-ul unui user in functie de nume
 account *search_account(user *user1, char name[101]) {
     size_t n = user1->size, i;
     for(i = 0; i < n; ++i){
@@ -105,6 +115,7 @@ account *search_account(user *user1, char name[101]) {
     return NULL;
 }
 
+// returneaza cont-ul unui user in functie de id
 account *search_account_by_id(user *user1, size_t id) {
     size_t n = user1->size, i;
     for(i = 0; i < n; ++i){
@@ -115,6 +126,7 @@ account *search_account_by_id(user *user1, size_t id) {
     return NULL;
 }
 
+// salveaza informatia din fisier in structura
 void upload_user(user *user1, char file_name[101]) {
     FILE *fptr;
 
@@ -153,6 +165,7 @@ void upload_user(user *user1, char file_name[101]) {
     fclose(fptr);
 }
 
+// salveaza informatia din structura in fisier
 void save_user(user *user1) {
     FILE *fptr;
 

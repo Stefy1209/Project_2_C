@@ -13,6 +13,7 @@ typedef struct {
     user **list;
 }array_users;
 
+// creaza o structura de gestioneaza un array de users
 array_users *new_array_users() {
     array_users *newArrayUsers = malloc(sizeof(array_users));
     newArrayUsers->capacity = 1;
@@ -22,6 +23,7 @@ array_users *new_array_users() {
     return newArrayUsers;
 }
 
+// elibereaza memoria folosita de structura
 void destroy_array_users(array_users *arrayUsers) {
     size_t n = arrayUsers->size, i;
     for(i = 0; i < n; ++i) {
@@ -33,6 +35,7 @@ void destroy_array_users(array_users *arrayUsers) {
     free(arrayUsers);
 }
 
+// adauga user
 void add_user(array_users *arrayUsers, user *newUser) {
     if(arrayUsers->size == arrayUsers->capacity) {
         user **temp = arrayUsers->list;
@@ -48,6 +51,7 @@ void add_user(array_users *arrayUsers, user *newUser) {
     arrayUsers->list[arrayUsers->size++] = newUser;
 }
 
+// elimina user
 void remove_user(array_users *arrayUsers, user *user1) {
     size_t n = arrayUsers->size, i = 0;
 
@@ -64,6 +68,7 @@ void remove_user(array_users *arrayUsers, user *user1) {
         arrayUsers->list[i] = arrayUsers->list[i+1];
 }
 
+// informatia din fisier e salvata in structura
 void upload_users(array_users *arrayUsers) {
     FILE *fptr;
 
@@ -97,6 +102,7 @@ void upload_users(array_users *arrayUsers) {
     fclose(fptr);
 }
 
+// informatia din strcutura este salvata in fisier
 void save_users(array_users *arrayUsers) {
     FILE *fptr;
 

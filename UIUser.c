@@ -6,6 +6,7 @@
 #include "user.h"
 #include "UIAccount.h"
 
+// afiseaza informatii despre user
 void UIPrintUser(user *user1) {
     printf("Name User: %s\n", get_username(user1));
     printf("Number Accounts: %zu\n", get_size_user(user1));
@@ -25,6 +26,7 @@ void UIPrintUser(user *user1) {
     printf("\n");
 }
 
+// ruleaza UI-ul pentru adaugarea unui cont
 void UIAddAccount(user *user1) {
     char typeAccount[101][101] = {"salary", "credit", "retirement", "savings", "checking"};
     int nrTypes = 5, i;
@@ -57,6 +59,14 @@ void UIAddAccount(user *user1) {
         }
     }
 
+    len = strlen(name);
+    for(i = 0; i < len; ++i) {
+        if(strchr("\\ ", name[i])) {
+            printf("Name must not contain spaces or \\ \n\n");
+            return;
+        }
+    }
+
     bool ok = false;
     for(i = 0; i < nrTypes; ++i) {
         if(strcmp(type, typeAccount[i]) == 0) {
@@ -85,6 +95,7 @@ void UIAddAccount(user *user1) {
     add_account(user1, newAccount);
 }
 
+// ruleaza UI-ul pentru eliminarea unui cont
 void UIDeleteAccount(user *user1) {
     size_t id;
 
@@ -104,6 +115,7 @@ void UIDeleteAccount(user *user1) {
     remove_account(user1, delAccount);
 }
 
+// ruleaza UI-ul pentru gestionarea unui user
 void UIUser(user *user1){
     upload_user(user1, get_username(user1));
     char command[101];

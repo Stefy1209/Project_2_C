@@ -4,6 +4,7 @@
 #include "repo_user.h"
 #include "UIUser.h"
 
+// ruleaza UI-ul pentru logare
 void logInUI(array_users *arrayUsers) {
     char username[101], password[101];
     size_t len;
@@ -36,6 +37,7 @@ void logInUI(array_users *arrayUsers) {
     printf("\nIncorrect password\n\n");
 }
 
+// ruleaza UI-ul pentru inregistrare
 void signUpUI(array_users *arrayUsers) {
     char username[101], password[101], passwordAgain[101];
     size_t len;
@@ -68,6 +70,14 @@ void signUpUI(array_users *arrayUsers) {
         }
     }
 
+    len = strlen(username);
+    for(i = 0; i < len; ++i) {
+        if(strchr("\\ ", username[i])) {
+            printf("\nThe username must not contain spaces or \\ \n\n");
+            return;
+        }
+    }
+
     if(strcmp(password, passwordAgain) != 0) {
         printf("\nThe first password is not the same as the second one\n\n");
         return;
@@ -78,6 +88,7 @@ void signUpUI(array_users *arrayUsers) {
     printf("\n");
 }
 
+// ruleaza UI-ul principal
 void UI() {
     array_users *arrayUsers = new_array_users();
     upload_users(arrayUsers);
